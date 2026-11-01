@@ -66,6 +66,13 @@ export default function HeroSection() {
             </a>
 
             <a
+              href="#career"
+              className="px-5 py-3 rounded-xl bg-[#0A0E1A] border border-[#00FFA3]/50 text-[#00FFA3] font-mono font-bold text-xs uppercase tracking-widest hover:bg-[#00FFA3]/15 hover:border-[#00FFA3] transition-all"
+            >
+              Career &amp; Resume &rarr;
+            </a>
+
+            <a
               href="#terminal"
               className="px-5 py-3 rounded-xl bg-[#0A0E1A] border border-slate-700 text-slate-300 font-mono text-xs hover:border-[#00FFA3] hover:text-[#00FFA3] transition-all"
             >

@@ -7,7 +7,9 @@ import HeroSection from '@/components/HeroSection';
 import AlifSpotlightSection from '@/components/AlifSpotlightSection';
 import ResearchSection from '@/components/ResearchSection';
 import ProjectsVaultSection from '@/components/ProjectsVaultSection';
+import CareerTimelineSection from '@/components/CareerTimelineSection';
 import TerminalSection from '@/components/TerminalSection';
+import OfflineAliSection from '@/components/OfflineAliSection';
 import CyberHudFooter from '@/components/CyberHudFooter';
 import InPageMediaModal from '@/components/InPageMediaModal';
 
@@ -55,7 +57,9 @@ export default function Home() {
         <AlifSpotlightSection onOpenMedia={handleOpenMedia} />
         <ResearchSection />
         <ProjectsVaultSection onOpenMedia={handleOpenMedia} />
+        <CareerTimelineSection onOpenMedia={handleOpenMedia} />
         <TerminalSection />
+        <OfflineAliSection />
       </div>
 
       {/* Cyber Tactical Footer */}

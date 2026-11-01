@@ -22,17 +22,8 @@ __pycache__/
 *.so
 .gradio/
 
-# Heavy Machine Learning Weights & Models in projects (keep repo fast & within GitHub limits)
-*.pth
-*.pt
-*.bin
-*.pkl
-*.h5
-*.ckpt
-*.tiktoken
+# Local project working directories (not pushed to remote)
 projects/
-projects/Transfer-Tokenizer/Tokenizer_models/o200k_base.tiktoken
-projects/Alif-Frontend/Naive_gpt/*.pth
 
 # Environment and local configs
 .env

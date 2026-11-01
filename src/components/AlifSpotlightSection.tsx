@@ -42,7 +42,7 @@ export default function AlifSpotlightSection({ onOpenMedia }: AlifSpotlightProps
               onClick={() =>
                 onOpenMedia(
                   'pdf',
-                  '/docs/alif-kaavish-poster.pdf',
+                  '/assets/docs/alif-kaavish-poster.pdf',
                   'ALIF Large Language Model - Kaavish FYP Research Poster'
                 )
               }
@@ -75,7 +75,7 @@ export default function AlifSpotlightSection({ onOpenMedia }: AlifSpotlightProps
                 onClick={() =>
                   onOpenMedia(
                     'image',
-                    '/projects/alif/data_pipeline.png',
+                    '/assets/projects/alif/data_pipeline.png',
                     'ALIF 33GB Urdu Data Ingestion & Preprocessing Pipeline'
                   )
                 }
@@ -87,7 +87,7 @@ export default function AlifSpotlightSection({ onOpenMedia }: AlifSpotlightProps
                 onClick={() =>
                   onOpenMedia(
                     'image',
-                    '/projects/alif/data_distribution.png',
+                    '/assets/projects/alif/data_distribution.png',
                     'ALIF Dataset Distribution Across Literature & Web'
                   )
                 }
@@ -118,7 +118,7 @@ export default function AlifSpotlightSection({ onOpenMedia }: AlifSpotlightProps
                 onClick={() =>
                   onOpenMedia(
                     'image',
-                    '/projects/alif/tokenizer_comparison.png',
+                    '/assets/projects/alif/tokenizer_comparison.png',
                     'Tokenizer Comparison: Average Token Counts & Compression'
                   )
                 }

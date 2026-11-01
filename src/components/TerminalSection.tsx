@@ -20,7 +20,7 @@ export default function TerminalSection() {
     },
   ]);
 
-  const bottomRef = useRef<HTMLDivElement>(null);
+  const terminalBodyRef = useRef<HTMLDivElement>(null);
 
   const handleCommand = (e: React.FormEvent) => {
     e.preventDefault();
@@ -114,7 +114,9 @@ TOP ACCURACY: 85.25% (Random Forest) closely followed by Bi-LSTM`,
   };
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (terminalBodyRef.current) {
+      terminalBodyRef.current.scrollTop = terminalBodyRef.current.scrollHeight;
+    }
   }, [history]);
 
   return (
@@ -143,7 +145,10 @@ TOP ACCURACY: 85.25% (Random Forest) closely followed by Bi-LSTM`,
           </div>
 
           {/* Terminal Body */}
-          <div className="p-4 sm:p-6 min-h-[300px] max-h-[420px] overflow-y-auto space-y-2">
+          <div
+            ref={terminalBodyRef}
+            className="p-4 sm:p-6 min-h-[300px] max-h-[420px] overflow-y-auto space-y-2"
+          >
             {history.map((line, idx) => (
               <div key={idx} className="whitespace-pre-wrap leading-relaxed">
                 {line.type === 'input' && (
@@ -160,7 +165,6 @@ TOP ACCURACY: 85.25% (Random Forest) closely followed by Bi-LSTM`,
                 )}
               </div>
             ))}
-            <div ref={bottomRef} />
           </div>
 
           {/* Terminal Input Form */}

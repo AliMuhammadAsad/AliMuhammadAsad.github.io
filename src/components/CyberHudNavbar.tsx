@@ -19,7 +19,9 @@ export default function CyberHudNavbar() {
     { label: '02 // ALIF_LLM', href: '#alif' },
     { label: '03 // RESEARCH', href: '#research' },
     { label: '04 // PROJECTS', href: '#projects' },
-    { label: '05 // TERMINAL', href: '#terminal' },
+    { label: '05 // CAREER', href: '#career' },
+    { label: '06 // TERMINAL', href: '#terminal' },
+    { label: '07 // MATRIX', href: '#offline' },
   ];
 
   return (
